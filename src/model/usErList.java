@@ -61,7 +61,7 @@ public class usErList {
     {
         for(user i : list)
         {
-            if (i.getFullName().equalsIgnoreCase(username)&&i.getPassword().equalsIgnoreCase(password)) return true;
+            if (i.getUserName().equalsIgnoreCase(username)&&i.getPassword().equalsIgnoreCase(password)) return true;
         }
         return false;
     }
