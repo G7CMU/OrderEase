@@ -1,3 +1,4 @@
+import Forms.LOGIN;
 import Forms.MainForm;
 import javax.swing.*;
 
@@ -17,11 +18,10 @@ public class App {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        var mainForm = new MainForm();
-        
-        mainForm.setVisible(true);
-        mainForm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        mainForm.setResizable(true);
+        var form = new LOGIN();
+        form.setVisible(true);
+        form.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        form.setResizable(true);
     }
     
 }
