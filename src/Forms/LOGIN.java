@@ -269,14 +269,13 @@ public class LOGIN extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        String username = inputpassword.getText();
-        String password = inputusername.getText();
+        String username = inputusername.getText();
+        String password = inputpassword.getText();
         if (list == null) {
             list = new usErList();
         } else {
             if (list.isUsernameAndPasswordMatches(username, password)) {
-
-                new MainForm(list.getUserByUserNameAndPassword(username, password)).setVisible(true);
+                new MainForm().setVisible(true);
             } else {
 //            if (!list.isUsernameExisted(username))
 //            {
