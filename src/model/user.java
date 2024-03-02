@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Random;
 import java.util.UUID;
 
-public class user {
+public class User {
     private UUID userId;
     private String userName;
     private String password;
@@ -82,7 +82,7 @@ public class user {
         this.dateOfBirth = dateOfBirth;
     }
     
-    public user(String userName, String password, String fullName, String location, String email, String phoneNo, Date dateOfBirth) {
+    public User(String userName, String password, String fullName, String location, String email, String phoneNo, Date dateOfBirth) {
         this.userId = UUID.randomUUID();
         this.userName = userName;
         this.password = password;
@@ -93,7 +93,7 @@ public class user {
         this.dateOfBirth = dateOfBirth;
     }
     
-    public user() {
+    public User() {
         this.userId = UUID.randomUUID();
     }
 
@@ -102,9 +102,9 @@ public class user {
         return "user{" + "userId=" + userId + ", userName=" + userName + ", password=" + password + ", fullName=" + fullName + ", location=" + location + ", email=" + email + ", phoneNo=" + phoneNo + '}';
     }
     
-    public user generateUser(int num)
+    public User generateUser(int num)
     {
-        user temp = new user();
+        User temp = new User();
         Random rd = new Random();
         temp.setFullName("user" + num);
         temp.setPassword(num + "" + num + num + num);

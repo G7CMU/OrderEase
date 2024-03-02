@@ -30,7 +30,6 @@ public class Order extends javax.swing.JFrame {
         L_fullName = new javax.swing.JLabel();
         T_name6 = new javax.swing.JTextField();
         L_MSSV6 = new javax.swing.JLabel();
-        T_MSSV6 = new javax.swing.JTextField();
         L_QueQuan6 = new javax.swing.JLabel();
         T_quequan6 = new javax.swing.JTextField();
         L_QueQuan7 = new javax.swing.JLabel();
@@ -39,6 +38,7 @@ public class Order extends javax.swing.JFrame {
         T_email = new javax.swing.JTextField();
         b_Submit = new javax.swing.JButton();
         B_cancel = new javax.swing.JButton();
+        jSpinner1 = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Order");
@@ -55,13 +55,6 @@ public class Order extends javax.swing.JFrame {
 
         L_MSSV6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         L_MSSV6.setText("Age :");
-
-        T_MSSV6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        T_MSSV6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                T_MSSV6ActionPerformed(evt);
-            }
-        });
 
         L_QueQuan6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         L_QueQuan6.setText("Address : ");
@@ -111,16 +104,17 @@ public class Order extends javax.swing.JFrame {
                                     .addComponent(L_QueQuan8)
                                     .addComponent(L_MSSV6))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(T_quequan6, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
-                                            .addComponent(T_sdt)
-                                            .addComponent(T_name6)
-                                            .addComponent(T_MSSV6, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(T_email, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(T_email, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addComponent(T_quequan6, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                                                .addComponent(T_sdt)
+                                                .addComponent(T_name6))))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addComponent(b_Submit, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -135,11 +129,11 @@ public class Order extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(L_fullName)
                     .addComponent(T_name6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(L_MSSV6)
-                    .addComponent(T_MSSV6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(T_quequan6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_QueQuan6))
@@ -181,10 +175,6 @@ public class Order extends javax.swing.JFrame {
     private void T_name6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T_name6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_T_name6ActionPerformed
-
-    private void T_MSSV6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T_MSSV6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_T_MSSV6ActionPerformed
 
     private void B_cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_cancelActionPerformed
         Items i = new Items();
@@ -240,12 +230,12 @@ public class Order extends javax.swing.JFrame {
     private javax.swing.JLabel L_QueQuan7;
     private javax.swing.JLabel L_QueQuan8;
     private javax.swing.JLabel L_fullName;
-    private javax.swing.JTextField T_MSSV6;
     private javax.swing.JTextField T_email;
     private javax.swing.JTextField T_name6;
     private javax.swing.JTextField T_quequan6;
     private javax.swing.JTextField T_sdt;
     private javax.swing.JButton b_Submit;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSpinner jSpinner1;
     // End of variables declaration//GEN-END:variables
 }
