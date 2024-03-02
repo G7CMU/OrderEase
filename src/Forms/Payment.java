@@ -58,6 +58,17 @@ public class Payment extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N

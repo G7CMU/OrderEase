@@ -1008,7 +1008,7 @@ public class MainForm extends javax.swing.JFrame {
 
         jPanel16.setBackground(java.awt.Color.lightGray);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ban phim.png"))); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ban_phim.png"))); // NOI18N
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
