@@ -82,7 +82,7 @@ public class user {
         this.dateOfBirth = dateOfBirth;
     }
     
-    public user(String userName, String password, String fullName, String location, String email, String phoneNo) {
+    public user(String userName, String password, String fullName, String location, String email, String phoneNo, Date dateOfBirth) {
         this.userId = UUID.randomUUID();
         this.userName = userName;
         this.password = password;
@@ -90,6 +90,7 @@ public class user {
         this.location = location;
         this.email = email;
         this.phoneNo = phoneNo;
+        this.dateOfBirth = dateOfBirth;
     }
     
     public user() {
