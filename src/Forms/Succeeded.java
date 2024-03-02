@@ -35,7 +35,7 @@ public class Succeeded extends javax.swing.JFrame {
         jLabel1.setText("ĐÃ THANH TOÁN THÀNH CÔNG");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("THOATS");
+        jButton1.setText("THOÁT");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
