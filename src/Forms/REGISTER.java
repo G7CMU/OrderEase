@@ -10,15 +10,15 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Formatting;
-import model.usErList;
-import model.user;
+import model.UserList;
+import model.User;
 
 /**
  *
  * @author trqnbao
  */
 public class REGISTER extends javax.swing.JFrame {
-    usErList list = null;
+    UserList list = null;
 
     /**
      * Creates new form RegisterFORM
@@ -27,7 +27,7 @@ public class REGISTER extends javax.swing.JFrame {
         initComponents();
     }
 
-    public REGISTER(usErList list) {
+    public REGISTER(UserList list) {
         initComponents(list);
     }
 
@@ -221,7 +221,7 @@ public class REGISTER extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void initComponents(usErList list) {
+    private void initComponents(UserList list) {
 
         jLabel1 = new javax.swing.JLabel();
         inputUserName = new javax.swing.JTextField();
@@ -496,7 +496,7 @@ public class REGISTER extends javax.swing.JFrame {
                  else
                  {
                      try {
-                         list.insert(new user(username,password,fullname,email,sdt,diachi, dateFormat.parse(dateOfBirth)));
+                         list.insert(new User(username,password,fullname,email,sdt,diachi, dateFormat.parse(dateOfBirth)));
                      } catch (ParseException ex) {
                          Logger.getLogger(REGISTER.class.getName()).log(Level.SEVERE, null, ex);
                      }
@@ -505,7 +505,7 @@ public class REGISTER extends javax.swing.JFrame {
                  }
             }
         } else {
-            this.list = new usErList();
+            this.list = new UserList();
             if (!username.isEmpty() && !password.isEmpty() && !fullname.isEmpty() && !email.isEmpty()
                     && !sdt.isEmpty() && !diachi.isEmpty()) {
         }

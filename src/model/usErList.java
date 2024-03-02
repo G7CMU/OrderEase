@@ -10,31 +10,31 @@ import java.util.ArrayList;
  *
  * @author trqnbao
  */
-public class usErList {
-    ArrayList<user> list;
+public class UserList {
+    ArrayList<User> list;
 
-    public usErList() {
+    public UserList() {
         list = new ArrayList<>();
     }
     
-    public usErList(ArrayList<user> list)
+    public UserList(ArrayList<User> list)
     {
         this.list = list;
     }
     
-    public void insert(user u)
+    public void insert(User u)
     {
         list.add(u);
     }
     
-    public void delete(user u)
+    public void delete(User u)
     {
         list.remove(u);
     }
     
-    public void update(user u)
+    public void update(User u)
     {
-        for(user i : list)
+        for(User i : list)
         {
             if (i.getUserId().equals(u.getUserId()))
             {
@@ -50,7 +50,7 @@ public class usErList {
     public boolean isUsernameExisted(String username)
     {
         
-        for(user i : list)
+        for(User i : list)
         {
             if (i.getFullName().equalsIgnoreCase(username)) return true;
         }
@@ -59,16 +59,16 @@ public class usErList {
     
     public boolean isUsernameAndPasswordMatches(String username, String password)
     {
-        for(user i : list)
+        for(User i : list)
         {
             if (i.getUserName().equalsIgnoreCase(username)&&i.getPassword().equalsIgnoreCase(password)) return true;
         }
         return false;
     }
     
-    public user getUserByUserNameAndPassword(String username, String password)
+    public User getUserByUserNameAndPassword(String username, String password)
     {
-        for(user i : list)
+        for(User i : list)
         {
             if (i.getFullName().equalsIgnoreCase(username)&&i.getPassword().equalsIgnoreCase(password)) return i;
         }
